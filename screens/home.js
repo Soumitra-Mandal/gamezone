@@ -5,9 +5,11 @@ import Card from '../shared/card';
 
 export default function Home({navigation}){
 const [reviews, setReviews] = useState([
-    {title:"BoogeyMan",rating:'3',body:"Kuch Bhi", key:'1'},
-    {title:"Amityville Horror",rating:'4',body:"Nice movie", key:'2'},
-    {title:"Supernatural",rating:'5',body:"Mast Hai", key:'3'},
+    {title:"Pokemon GO",rating:'3',body:"Kuch Bhi", key:'1'},
+    {title:"Clash Royale",rating:'4',body:"Nice movie", key:'2'},
+    {title:"Asphalt 8",rating:'5',body:"Mast Hai", key:'3'},
+    {title:"Call Of Duty",rating:'4',body:"It is amazing", key:'4'},
+
 ])
 
     return (

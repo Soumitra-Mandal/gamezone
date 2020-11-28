@@ -14,7 +14,7 @@ export default function ReviewDetails({route}){
             <Text>Review: {body}</Text>
             <View style={styles.rating}>
             <Text>Gamezone rating: </Text>
-            <Image source={images[rating].src}></Image>
+            <Image source={images.ratings[rating]}></Image>
             </View>
             </Card>
         </View>
@@ -23,6 +23,12 @@ export default function ReviewDetails({route}){
 
 const styles = StyleSheet.create({
  rating:{
-
+    flexDirection:'row',
+    justifyContent:'center',
+    paddingVertical:16,
+    marginTop:16,
+    borderWidth:1,
+    borderColor:"#eee",
+    backgroundColor:'cyan'
  },
 });

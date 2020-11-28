@@ -15,7 +15,7 @@ export const globalStyles = StyleSheet.create({
         lineHeight:20,
     },
     drawer:{
-      backgroundColor:"aquamarine",
+      backgroundColor:"cyan",
       color:"white"
     
     }

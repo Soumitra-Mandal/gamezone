@@ -10,7 +10,7 @@ import About from './screens/about';
 import {globalStyles} from './styles/globals';
 import {AntDesign} from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons'; 
-
+import {Image} from 'react-native';
 
 
 const Stack = createStackNavigator(); 
@@ -26,10 +26,15 @@ function A1({navigation}){
     headerLeft:()=>(
       <MaterialIcons name="menu" size={32} color="black" style={{paddingHorizontal:20}} onPress={()=>navigation.openDrawer()} />
     ),
+    headerRight:()=>(
+      <Image source={require('./assets/lightning.png')} style = {{height:35,width:35,position:'absolute', right:90, top:15}}></Image>
+),
     headerTitleAlign:'center',
     headerTitleStyle:{
     fontFamily:'nunito-bold',
-    color:'#666',
+    color:'green',
+    fontSize:24,
+    
   
 }
     }
@@ -41,7 +46,9 @@ function A1({navigation}){
       headerTitleAlign:'center',
       headerTitleStyle:{
       fontFamily:'nunito-bold',
-      color:'#666'
+      color:'#0492c2',
+      fontSize:24
+
       }
     }
   }
@@ -61,7 +68,7 @@ options={{
 headerTitleAlign:'center',
 headerTitleStyle:{
 fontFamily:'nunito-bold',
-color:'#666'
+color:'#241571'
 }
 }}
 
