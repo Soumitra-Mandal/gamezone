@@ -63,7 +63,7 @@ function A2({navigation}) {
 <Stack.Screen name="About" component={About} 
 options={{
   headerLeft:()=>(
-      <MaterialIcons name="menu" size={32} color="black" style={{paddingHorizontal:20}} onPress={()=>navigation.openDrawer()} />
+    <MaterialIcons name="menu" size={32} color="black" style={{paddingHorizontal:20}} onPress={()=>navigation.openDrawer()}/>
     ),
 headerTitleAlign:'center',
 headerTitleStyle:{
@@ -73,7 +73,8 @@ color:'#241571'
 }}
 
 />
-</Stack.Navigator>);}
+</Stack.Navigator>);
+}
 
 export default function App() {
   const [fontsLoaded] = useFonts({
