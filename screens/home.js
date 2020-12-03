@@ -18,7 +18,6 @@ const [reviews, setReviews] = useState([
 
 
     const addReview = (review)=>{
-        addItem(review);
         review.key = Math.random.toString();
         setReviews((CurrentReviews)=>{
             return[...CurrentReviews, review];
